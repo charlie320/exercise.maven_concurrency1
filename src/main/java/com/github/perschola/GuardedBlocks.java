@@ -31,7 +31,9 @@ public class GuardedBlocks {
 		threadOne.setName("Thread One");
 		Thread threadTwo = new Thread(r);
 		threadTwo.setName("Thread Two");
+		
 		threadOne.start();
+//		threadOne.join();
 		threadTwo.start();
 	}
 }
